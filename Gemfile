@@ -9,6 +9,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'unicorn'
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'active_hash'
+gem 'devise_token_auth'
+gem 'omniauth'
 
 group :development do
   gem "web-console"
