@@ -11,6 +11,7 @@ gem 'unicorn'
 # gem 'active_hash'
 gem 'devise_token_auth'
 gem 'omniauth'
+gem 'rack-cors', :require => 'rack/cors'
 
 group :development do
   gem "web-console"
