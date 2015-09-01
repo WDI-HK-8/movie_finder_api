@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   resources :users, only: [:show] do
     resources :likes, only: [:index, :create]
   end
+
+  get '/movies' => 'movies#index'
+  get '/movies/:omdb_id' => 'movies#show'
 end
