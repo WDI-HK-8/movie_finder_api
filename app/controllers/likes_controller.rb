@@ -9,7 +9,7 @@ class LikesController < ApplicationController
 
   def create
     @user = User.find(params[:user_id])
-    @like = @user.likes.create(omdb_id: params[:like][:omdb_id])
+    @like = @user.likes.create(omdb_id: params[:like][:omdb_id], title: params[:like][:title])
 
     render json: @like
   end
